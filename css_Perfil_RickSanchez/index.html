@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,500;0,700;1,300;1,400;1,600;1,900&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="style.css">
+    <title>Perfil Rick Sanchez</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../imagens/rick3.jpeg" width=60% alt="Logo do Rick">
+        </div>
+        <ul>
+            <li>
+                <a href="https://github.com/luananobre/">Github</a>
+            </li>
+            <li>
+                <a href="malito:wubbalubba@awsomerick.com">E-mail</a>
+            </li>
+            <li>
+                <a href="https://wa.me/2199999999">WhatsApp</a>
+            </li>            
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div>
+                <h1>Rick Sanchez </h1>
+                <h5>Cientista</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+            <div style="display: none" id="about">
+                <p>
+                    Um cientista alcoólatra de 70 anos extremamente inteligente que é capaz de construir máquinas e acessórios tecnológicos que o permitem viajar por  diversas dimensões e realidades paralelas.
+                    Quase nunca pensa nas consequências de suas ações e possui um comportamento excêntrico e um estilo de vida niilista. É pai de Beth, sogro de Jerry e avô de Morty e Summer.
+                </p>
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="contato">
+                        Parece um bom momento para uma bebida e um discurso frio e calculado com um tom sinistro.
+                       <p>Deixe seu contato.</p>  
+                    </div>
+                    <input type="text" placeholder="wubba lubba dub dub!">
+                    <button class="button">enviar!</button>
+                </form>
+                
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+
+        }
+    </script>
+</body>
+</html>
